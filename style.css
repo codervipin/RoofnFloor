@@ -4,6 +4,9 @@
     box-sizing: border-box;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+html{
+    scroll-behaviour: smooth;
+}
 
 header{
     width: 100%;
@@ -527,8 +530,9 @@ div.copyright{
     overflow: scroll;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
-    scroll-snap-align:start none ;
+/*     scroll-snap-align:start none ; */
     /* border: solid; */
+    scroll-padding: 10px;
    
 }
 
@@ -538,6 +542,7 @@ div.copyright{
     object-fit: cover;
     /* border: solid; */
     transition: all 0.3s ease;
+    scroll-snap-align:start;
 }
 .property .propdetail .images img:hover{
     scale: 1.05;
